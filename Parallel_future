@@ -1,0 +1,11 @@
+#create temporary dir
+dir.create('tempfiledir')
+#obtain string with the path
+tempdir=paste(getwd(),'tempfiledir', sep="/")
+rasterOptions(tmpdir=tempdir)
+
+#Set the memory limit for parallel running
+mem_future <- 5000*1024^2 #this is toset the limit to 5GB
+plan(multisession, workers=7)
+ options(future.globals.maxSize= mem <- future)
+
