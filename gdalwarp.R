@@ -7,7 +7,7 @@ sapply(packs, require, character.only = TRUE)
 # imagen a alienar
 target<-'/path/target.tif'
  #este es mi mapa de referencia para alinear. pero en realidad puedes usar cualquier que esté alineaso
- reference. <-"path/mask_ideam90_17.tif"
+ reference. <-"/storage/home/TU/tug76452/Forest_Armonization/mask_ideam90_17.tif"   
  
 #donde se va a poner: Share 
  dst.<-'path/out/target.tif'
